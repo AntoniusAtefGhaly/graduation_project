@@ -1,0 +1,13 @@
+18:39:26 **** Incremental Build of configuration Debug for project mpu6050_driver_2 ****
+make all 
+Building target: mpu6050_driver_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver_2.map -mmcu=atmega32 -o "mpu6050_driver_2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver_2.elf] Error 1
+
+18:39:27 Build Finished (took 293ms)
+

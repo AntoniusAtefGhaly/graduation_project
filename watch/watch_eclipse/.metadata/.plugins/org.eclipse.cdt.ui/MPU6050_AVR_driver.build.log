@@ -1,0 +1,20 @@
+20:02:27 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:02:27 Build Finished (took 522ms)
+

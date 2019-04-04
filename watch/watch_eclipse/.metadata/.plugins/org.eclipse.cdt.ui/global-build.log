@@ -1,0 +1,1133 @@
+18:26:31 **** Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../heart_pulse.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"heart_pulse.d" -MT"heart_pulse.o" -c -o "heart_pulse.o" "../heart_pulse.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../heart_pulse.h:10,
+                 from ../heart_pulse.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../heart_pulse.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../uart.c:38:2: warning: "/*" within comment
+Finished building: ../uart.c
+ 
+Building target: heart_pulse_sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,heart_pulse_sensor.map -mmcu=atmega32 -o "heart_pulse_sensor.elf"  ./adc.o ./heart_pulse.o ./main.o ./uart.o   
+Finished building target: heart_pulse_sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S heart_pulse_sensor.elf  >"heart_pulse_sensor.lss"
+Finished building: heart_pulse_sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5332 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:26:34 **** Build of configuration Debug for project mpu6050_driver ****
+make all 
+Building file: ../i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2c.d" -MT"i2c.o" -c -o "i2c.o" "../i2c.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../i2c.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../i2c.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../mpu6050.h:11,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../mpu6050.h:11,
+                 from ../mpu6050.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../mpu6050.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:19,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: mpu6050_driver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver.map -mmcu=atmega32 -o "mpu6050_driver.elf"  ./i2c.o ./main.o ./mpu6050.o ./uart.o   
+Finished building target: mpu6050_driver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S mpu6050_driver.elf  >"mpu6050_driver.lss"
+Finished building: mpu6050_driver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:26:35 **** Build of configuration Debug for project mpu6050_driver2 ****
+make all 
+Building file: ../i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2c.d" -MT"i2c.o" -c -o "i2c.o" "../i2c.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../i2c.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../i2c.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../mpu6050.h:11,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../mpu6050.h:11,
+                 from ../mpu6050.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../mpu6050.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:19,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: mpu6050_driver2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver2.map -mmcu=atmega32 -o "mpu6050_driver2.elf"  ./i2c.o ./main.o ./mpu6050.o ./uart.o   
+Finished building target: mpu6050_driver2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S mpu6050_driver2.elf  >"mpu6050_driver2.lss"
+Finished building: mpu6050_driver2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:30:03 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5332 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:30:05 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:30:06 **** Incremental Build of configuration Debug for project mpu6050_driver2 ****
+make all 
+Building file: ../I2C_Master_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"I2C_Master_C_file.d" -MT"I2C_Master_C_file.o" -c -o "I2C_Master_C_file.o" "../I2C_Master_C_file.c"
+In file included from ../I2C_Master_H_file.h:13,
+                 from ../I2C_Master_C_file.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../I2C_Master_C_file.c
+ 
+Building file: ../USART_RS232_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"USART_RS232_C_file.d" -MT"USART_RS232_C_file.o" -c -o "USART_RS232_C_file.o" "../USART_RS232_C_file.c"
+Finished building: ../USART_RS232_C_file.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+In file included from ../mpu6050.h:11,
+                 from ../mpu6050.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../mpu6050.c:259:3: warning: "/*" within comment
+Finished building: ../mpu6050.c
+ 
+Building target: mpu6050_driver2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver2.map -mmcu=atmega32 -o "mpu6050_driver2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver2.elf] Error 1
+18:31:35 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5332 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:31:36 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:31:37 **** Incremental Build of configuration Debug for project mpu6050_driver2 ****
+make all 
+Building file: ../I2C_Master_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"I2C_Master_C_file.d" -MT"I2C_Master_C_file.o" -c -o "I2C_Master_C_file.o" "../I2C_Master_C_file.c"
+In file included from ../I2C_Master_H_file.h:13,
+                 from ../I2C_Master_C_file.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../I2C_Master_C_file.c
+ 
+Building file: ../USART_RS232_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"USART_RS232_C_file.d" -MT"USART_RS232_C_file.o" -c -o "USART_RS232_C_file.o" "../USART_RS232_C_file.c"
+Finished building: ../USART_RS232_C_file.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+In file included from ../mpu6050.h:11,
+                 from ../mpu6050.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../mpu6050.c:259:3: warning: "/*" within comment
+Finished building: ../mpu6050.c
+ 
+Building target: mpu6050_driver2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver2.map -mmcu=atmega32 -o "mpu6050_driver2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver2.elf] Error 1
+18:32:36 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5332 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:37 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:32:38 **** Incremental Build of configuration Debug for project mpu6050_driver2 ****
+make all 
+Building target: mpu6050_driver2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver2.map -mmcu=atmega32 -o "mpu6050_driver2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver2.elf] Error 1
+18:32:39 **** Build of configuration Debug for project mpu6050_driver_2 ****
+make all 
+Building file: ../I2C_Master_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"I2C_Master_C_file.d" -MT"I2C_Master_C_file.o" -c -o "I2C_Master_C_file.o" "../I2C_Master_C_file.c"
+In file included from ../I2C_Master_H_file.h:13,
+                 from ../I2C_Master_C_file.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../I2C_Master_C_file.c
+ 
+Building file: ../USART_RS232_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"USART_RS232_C_file.d" -MT"USART_RS232_C_file.o" -c -o "USART_RS232_C_file.o" "../USART_RS232_C_file.c"
+Finished building: ../USART_RS232_C_file.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+In file included from ../mpu6050.h:11,
+                 from ../mpu6050.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../mpu6050.c:259:3: warning: "/*" within comment
+Finished building: ../mpu6050.c
+ 
+Building target: mpu6050_driver_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver_2.map -mmcu=atmega32 -o "mpu6050_driver_2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver_2.elf] Error 1
+18:33:33 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5332 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:33:34 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:33:35 **** Incremental Build of configuration Debug for project mpu6050_driver2 ****
+make all 
+Building target: mpu6050_driver2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver2.map -mmcu=atmega32 -o "mpu6050_driver2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver2.elf] Error 1
+18:33:36 **** Incremental Build of configuration Debug for project mpu6050_driver_2 ****
+make all 
+Building file: ../I2C_Master_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"I2C_Master_C_file.d" -MT"I2C_Master_C_file.o" -c -o "I2C_Master_C_file.o" "../I2C_Master_C_file.c"
+In file included from ../I2C_Master_H_file.h:13,
+                 from ../I2C_Master_C_file.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../I2C_Master_C_file.c
+ 
+Building file: ../USART_RS232_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"USART_RS232_C_file.d" -MT"USART_RS232_C_file.o" -c -o "USART_RS232_C_file.o" "../USART_RS232_C_file.c"
+Finished building: ../USART_RS232_C_file.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+In file included from ../mpu6050.h:11,
+                 from ../mpu6050.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../mpu6050.c
+ 
+Building target: mpu6050_driver_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver_2.map -mmcu=atmega32 -o "mpu6050_driver_2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver_2.elf] Error 1
+18:39:21 **** Clean-only build of configuration Release for project MPU6050_AVR_driver ****
+make clean 
+rm -rf  MPU6050_AVR_driver.hex  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o  MPU6050_AVR_driver.eep  sizedummy  MPU6050_AVR_driver.lss  ./I2C_Master_C_file.d ./USART_RS232_C_file.d ./main.d ./mpu6050.d  MPU6050_AVR_driver.elf
+ 
+18:39:22 **** Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Building file: ../I2C_Master_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"I2C_Master_C_file.d" -MT"I2C_Master_C_file.o" -c -o "I2C_Master_C_file.o" "../I2C_Master_C_file.c"
+Finished building: ../I2C_Master_C_file.c
+ 
+Building file: ../USART_RS232_C_file.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"USART_RS232_C_file.d" -MT"USART_RS232_C_file.o" -c -o "USART_RS232_C_file.o" "../USART_RS232_C_file.c"
+Finished building: ../USART_RS232_C_file.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+Finished building: ../mpu6050.c
+ 
+Building target: MPU6050_AVR_driver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MPU6050_AVR_driver.map -mmcu=atmega32 -o "MPU6050_AVR_driver.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+Finished building target: MPU6050_AVR_driver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MPU6050_AVR_driver.elf  >"MPU6050_AVR_driver.lss"
+Finished building: MPU6050_AVR_driver.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MPU6050_AVR_driver.elf  "MPU6050_AVR_driver.hex"
+Finished building: MPU6050_AVR_driver.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex MPU6050_AVR_driver.elf  "MPU6050_AVR_driver.eep"
+Finished building: MPU6050_AVR_driver.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:39:24 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5332 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:39:25 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:39:26 **** Incremental Build of configuration Debug for project mpu6050_driver2 ****
+make all 
+Building target: mpu6050_driver2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver2.map -mmcu=atmega32 -o "mpu6050_driver2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver2.elf] Error 1
+18:39:26 **** Incremental Build of configuration Debug for project mpu6050_driver_2 ****
+make all 
+Building target: mpu6050_driver_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver_2.map -mmcu=atmega32 -o "mpu6050_driver_2.elf"  ./I2C_Master_C_file.o ./USART_RS232_C_file.o ./main.o ./mpu6050.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(inverse.o): In function `inverse':
+(.text.avr-libc.fplib+0xc): relocation truncated to fit: R_AVR_13_PCREL against symbol `__divsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(square.o): In function `square':
+(.text.avr-libc.fplib+0x4): relocation truncated to fit: R_AVR_13_PCREL against symbol `__mulsf3' defined in .text section in c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+make: *** [mpu6050_driver_2.elf] Error 1
+18:39:53 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:39:53 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5332 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:39:54 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:07 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:08 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../heart_pulse.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"heart_pulse.d" -MT"heart_pulse.o" -c -o "heart_pulse.o" "../heart_pulse.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../heart_pulse.h:10,
+                 from ../heart_pulse.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../heart_pulse.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../uart.c:38:2: warning: "/*" within comment
+Finished building: ../uart.c
+ 
+Building target: heart_pulse_sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,heart_pulse_sensor.map -mmcu=atmega32 -o "heart_pulse_sensor.elf"  ./adc.o ./heart_pulse.o ./main.o ./uart.o   
+Finished building target: heart_pulse_sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S heart_pulse_sensor.elf  >"heart_pulse_sensor.lss"
+Finished building: heart_pulse_sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5336 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:11 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Building file: ../i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2c.d" -MT"i2c.o" -c -o "i2c.o" "../i2c.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../i2c.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../i2c.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../mpu6050.h:11,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../mpu6050.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mpu6050.d" -MT"mpu6050.o" -c -o "mpu6050.o" "../mpu6050.c"
+In file included from ../micro_config.h:19,
+                 from ../i2c.h:12,
+                 from ../mpu6050.h:11,
+                 from ../mpu6050.c:6:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../mpu6050.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:19,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: mpu6050_driver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,mpu6050_driver.map -mmcu=atmega32 -o "mpu6050_driver.elf"  ./i2c.o ./main.o ./mpu6050.o ./uart.o   
+Finished building target: mpu6050_driver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S mpu6050_driver.elf  >"mpu6050_driver.lss"
+Finished building: mpu6050_driver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:35 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:37 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: heart_pulse_sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,heart_pulse_sensor.map -mmcu=atmega32 -o "heart_pulse_sensor.elf"  ./adc.o ./heart_pulse.o ./main.o ./uart.o   
+Finished building target: heart_pulse_sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S heart_pulse_sensor.elf  >"heart_pulse_sensor.lss"
+Finished building: heart_pulse_sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5336 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:38 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:19 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:21 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../uart.c:44: error: expected identifier or '(' before 'void'
+make: *** [uart.o] Error 1
+20:01:21 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:34 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:35 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: heart_pulse_sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,heart_pulse_sensor.map -mmcu=atmega32 -o "heart_pulse_sensor.elf"  ./adc.o ./heart_pulse.o ./main.o ./uart.o   
+Finished building target: heart_pulse_sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S heart_pulse_sensor.elf  >"heart_pulse_sensor.lss"
+Finished building: heart_pulse_sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5336 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:37 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:54 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:55 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../uart.c:44:2: warning: "/*" within comment
+Finished building: ../uart.c
+ 
+Building target: heart_pulse_sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,heart_pulse_sensor.map -mmcu=atmega32 -o "heart_pulse_sensor.elf"  ./adc.o ./heart_pulse.o ./main.o ./uart.o   
+Finished building target: heart_pulse_sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S heart_pulse_sensor.elf  >"heart_pulse_sensor.lss"
+Finished building: heart_pulse_sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5336 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:56 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:02:27 **** Incremental Build of configuration Release for project MPU6050_AVR_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MPU6050_AVR_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10248 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:       1337 bytes (65.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:02:28 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: heart_pulse_sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,heart_pulse_sensor.map -mmcu=atmega32 -o "heart_pulse_sensor.elf"  ./adc.o ./heart_pulse.o ./main.o ./uart.o   
+Finished building target: heart_pulse_sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S heart_pulse_sensor.elf  >"heart_pulse_sensor.lss"
+Finished building: heart_pulse_sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5336 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:02:30 **** Incremental Build of configuration Debug for project mpu6050_driver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 mpu6050_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6292 bytes (19.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

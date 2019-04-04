@@ -1,0 +1,38 @@
+20:02:28 **** Incremental Build of configuration Debug for project heart_pulse_sensor ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: heart_pulse_sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,heart_pulse_sensor.map -mmcu=atmega32 -o "heart_pulse_sensor.elf"  ./adc.o ./heart_pulse.o ./main.o ./uart.o   
+Finished building target: heart_pulse_sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S heart_pulse_sensor.elf  >"heart_pulse_sensor.lss"
+Finished building: heart_pulse_sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 heart_pulse_sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5336 bytes (16.3% Full)
+(.text + .data + .bootloader)
+
+Data:        277 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:02:29 Build Finished (took 1s.236ms)
+
