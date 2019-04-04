@@ -1,0 +1,3776 @@
+13:13:51 **** Build of configuration Debug for project home_montring1 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../buttons_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buttons_leds.d" -MT"buttons_leds.o" -c -o "buttons_leds.o" "../buttons_leds.c"
+In file included from ../micro_config.h:18,
+                 from ../buttons_leds.h:12,
+                 from ../buttons_leds.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../buttons_leds.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:91: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../uart.c:40:2: warning: "/*" within comment
+Finished building: ../uart.c
+ 
+Building target: home_montring1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring1.map -mmcu=atmega32 -o "home_montring1.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring1.elf  >"home_montring1.lss"
+Finished building: home_montring1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:34:47 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../buttons_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buttons_leds.d" -MT"buttons_leds.o" -c -o "buttons_leds.o" "../buttons_leds.c"
+In file included from ../micro_config.h:18,
+                 from ../buttons_leds.h:12,
+                 from ../buttons_leds.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../buttons_leds.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../uart.c:40:2: warning: "/*" within comment
+Finished building: ../uart.c
+ 
+Building target: home_montring1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring1.map -mmcu=atmega32 -o "home_montring1.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring1.elf  >"home_montring1.lss"
+Finished building: home_montring1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:35:09 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: home_montring1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring1.map -mmcu=atmega32 -o "home_montring1.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring1.elf  >"home_montring1.lss"
+Finished building: home_montring1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:38:49 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building target: home_montring1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring1.map -mmcu=atmega32 -o "home_montring1.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring1.elf  >"home_montring1.lss"
+Finished building: home_montring1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+**** Build of configuration Debug for project enterences _ecurity ****
+
+Nothing to build for project enterences _ecurity
+14:39:52 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+**** Build of configuration Debug for project enterences _ecurity ****
+
+Nothing to build for project enterences _ecurity
+14:40:59 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Building target: home_montring1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring1.map -mmcu=atmega32 -o "home_montring1.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring1.elf  >"home_montring1.lss"
+Finished building: home_montring1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring1.elf  "home_montring1.hex"
+Finished building: home_montring1.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring1.elf  "home_montring1.eep"
+Finished building: home_montring1.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:52:43 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:169: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:52:46 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:53:21 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:53:21 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:53:34 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:53:35 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:54:31 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:54:33 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:55:02 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:55:03 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:55:23 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:55:24 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:56:08 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:56:09 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:56:18 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:56:19 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:57:54 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:57:55 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:58:42 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:58:43 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:59:04 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+14:59:05 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:00:50 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:00:52 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:00:58 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:00:59 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:01:56 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./lcd.o ./main.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:01:57 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:02:25 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../buttons_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buttons_leds.d" -MT"buttons_leds.o" -c -o "buttons_leds.o" "../buttons_leds.c"
+In file included from ../micro_config.h:18,
+                 from ../buttons_leds.h:12,
+                 from ../buttons_leds.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../buttons_leds.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:02:27 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:06:06 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:95: warning: array subscript has type 'char'
+../lcd.c:100: warning: array subscript has type 'char'
+../lcd.c:100: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../lcd.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:06:07 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:06:31 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:06:32 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:06:39 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:06:40 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:06:42 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:06:43 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:07:17 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../buttons_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buttons_leds.d" -MT"buttons_leds.o" -c -o "buttons_leds.o" "../buttons_leds.c"
+In file included from ../micro_config.h:18,
+                 from ../buttons_leds.h:12,
+                 from ../buttons_leds.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../buttons_leds.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:95: warning: array subscript has type 'char'
+../lcd.c:100: warning: array subscript has type 'char'
+../lcd.c:100: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:07:19 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:08:16 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:08:18 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:09:42 **** Incremental Build of configuration Debug for project enterences _ecurity ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../buttons_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buttons_leds.d" -MT"buttons_leds.o" -c -o "buttons_leds.o" "../buttons_leds.c"
+In file included from ../micro_config.h:18,
+                 from ../buttons_leds.h:12,
+                 from ../buttons_leds.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../buttons_leds.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: enterences _ecurity.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterences _ecurity.map -mmcu=atmega32 -o "enterences _ecurity.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+avr-gcc.exe: _ecurity.map: No such file or directory
+make: *** [enterences _ecurity.elf] Error 1
+15:09:44 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:11:05 **** Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8566 bytes (26.1% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:11:08 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:16:07 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8654 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:16:09 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:17:01 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8654 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:17:02 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:18:24 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8650 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:18:26 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:20:50 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8650 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:20:52 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:22:21 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../UltraSonic.c: In function 'getDistance':
+../UltraSonic.c:43: error: 'count' undeclared (first use in this function)
+../UltraSonic.c:43: error: (Each undeclared identifier is reported only once
+../UltraSonic.c:43: error: for each function it appears in.)
+make: *** [UltraSonic.o] Error 1
+15:22:22 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:24:01 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:27: warning: unused variable 'count'
+Finished building: ../main.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8662 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:24:04 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:24:35 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8662 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:24:37 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:25:51 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:20: warning: unused variable 'count'
+Finished building: ../main.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8662 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:25:53 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:28:59 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8666 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:29:01 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:29:02 **** Build of configuration Debug for project home_montring2 ****
+make all 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:31:21 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8684 bytes (26.5% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:31:23 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:31:24 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:41:30 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../UltraSonic.c: In function 'UltraSonic_display_distance':
+../UltraSonic.c:73: warning: implicit declaration of function 'LCD_displayString'
+../UltraSonic.c:74: error: 'distance' undeclared (first use in this function)
+../UltraSonic.c:74: error: (Each undeclared identifier is reported only once
+../UltraSonic.c:74: error: for each function it appears in.)
+../UltraSonic.c:75: warning: implicit declaration of function 'LCD_goToRowColumn'
+../UltraSonic.c:76: warning: implicit declaration of function 'LCD_intgerToString'
+make: *** [UltraSonic.o] Error 1
+15:41:31 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:41:32 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:41:47 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../UltraSonic.c: In function 'UltraSonic_display_distance':
+../UltraSonic.c:74: error: 'distance' undeclared (first use in this function)
+../UltraSonic.c:74: error: (Each undeclared identifier is reported only once
+../UltraSonic.c:74: error: for each function it appears in.)
+make: *** [UltraSonic.o] Error 1
+15:41:48 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:41:49 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:42:14 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8702 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:42:16 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:42:16 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:44:17 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:44:19 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:44:20 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:49:32 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: enterence_security.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,enterence_security.map -mmcu=atmega32 -o "enterence_security.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: enterence_security.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S enterence_security.elf  >"enterence_security.lss"
+Finished building: enterence_security.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex enterence_security.elf  "enterence_security.hex"
+Finished building: enterence_security.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex enterence_security.elf  "enterence_security.eep"
+Finished building: enterence_security.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:49:34 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../main.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring1.map -mmcu=atmega32 -o "home_montring1.elf"  ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring1.elf  >"home_montring1.lss"
+Finished building: home_montring1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring1.elf  "home_montring1.hex"
+Finished building: home_montring1.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring1.elf  "home_montring1.eep"
+Finished building: home_montring1.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:49:35 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../UltraSonic.c
+ 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../micro_config.h:18,
+                 from ../adc.h:11,
+                 from ../adc.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../adc.c
+ 
+Building file: ../buttons_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buttons_leds.d" -MT"buttons_leds.o" -c -o "buttons_leds.o" "../buttons_leds.c"
+In file included from ../micro_config.h:18,
+                 from ../buttons_leds.h:12,
+                 from ../buttons_leds.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../buttons_leds.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:90: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:18,
+                 from ../uart.h:11,
+                 from ../uart.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:54:34 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:54:35 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:54:36 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10416 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:08 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:09 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:10 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10416 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:33 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:34 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:35 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10416 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:01:05 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:01:05 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:01:07 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10416 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:02:25 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:02:26 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:02:27 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10408 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:12:01 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:12:04 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:12:05 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10408 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:19:08 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:19:10 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:19:11 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9940 bytes (30.3% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:21:10 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:21:11 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:21:12 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../buttons_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buttons_leds.d" -MT"buttons_leds.o" -c -o "buttons_leds.o" "../buttons_leds.c"
+In file included from ../micro_config.h:18,
+                 from ../buttons_leds.h:12,
+                 from ../buttons_leds.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../buttons_leds.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../smoke_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"smoke_sensor.d" -MT"smoke_sensor.o" -c -o "smoke_sensor.o" "../smoke_sensor.c"
+In file included from ../micro_config.h:18,
+                 from ../lcd.h:13,
+                 from ../smoke_sensor.h:9,
+                 from ../smoke_sensor.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smoke_sensor.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9914 bytes (30.3% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:28:10 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:28:11 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:28:12 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9684 bytes (29.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:31:14 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:31:15 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:31:16 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:53: warning: implicit declaration of function 'fire_state'
+../main.c:54: warning: implicit declaration of function 'enterance_state'
+../main.c: At top level:
+../main.c:60: warning: conflicting types for 'enterance_state'
+../main.c:54: warning: previous implicit declaration of 'enterance_state' was here
+../main.c:63: warning: conflicting types for 'fire_state'
+../main.c:53: warning: previous implicit declaration of 'fire_state' was here
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9762 bytes (29.8% Full)
+(.text + .data + .bootloader)
+
+Data:         64 bytes (3.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:37:24 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:37:26 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:37:26 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:54: warning: implicit declaration of function 'fire_state'
+../main.c:55: warning: implicit declaration of function 'enterance_state'
+../main.c: At top level:
+../main.c:61: warning: conflicting types for 'enterance_state'
+../main.c:55: warning: previous implicit declaration of 'enterance_state' was here
+../main.c:78: warning: conflicting types for 'fire_state'
+../main.c:54: warning: previous implicit declaration of 'fire_state' was here
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9894 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:41 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:42 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:43 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../UltraSonic.c: In function 'enterance_alarm':
+../UltraSonic.c:84: warning: implicit declaration of function 'uart_send_byte'
+Finished building: ../UltraSonic.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:55: warning: implicit declaration of function 'fire_state'
+../main.c:56: warning: implicit declaration of function 'enterance_state'
+../main.c: At top level:
+../main.c:62: warning: conflicting types for 'enterance_state'
+../main.c:56: warning: previous implicit declaration of 'enterance_state' was here
+../main.c:79: warning: conflicting types for 'fire_state'
+../main.c:55: warning: previous implicit declaration of 'fire_state' was here
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10178 bytes (31.1% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:44:12 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:44:13 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:44:14 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:55: warning: implicit declaration of function 'fire_state'
+../main.c:56: warning: implicit declaration of function 'enterance_state'
+../main.c: At top level:
+../main.c:62: warning: conflicting types for 'enterance_state'
+../main.c:56: warning: previous implicit declaration of 'enterance_state' was here
+../main.c:79: warning: conflicting types for 'fire_state'
+../main.c:55: warning: previous implicit declaration of 'fire_state' was here
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10178 bytes (31.1% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:44:50 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:44:51 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:44:52 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:56: warning: implicit declaration of function 'enterance_state'
+../main.c: At top level:
+../main.c:62: warning: conflicting types for 'enterance_state'
+../main.c:56: warning: previous implicit declaration of 'enterance_state' was here
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10178 bytes (31.1% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:45:25 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:45:25 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:45:26 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10178 bytes (31.1% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:36 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:37 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:38 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:28:1: warning: "ENTRANCE_SAFE" redefined
+../main.c:27:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10202 bytes (31.1% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:56:57 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:56:58 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:56:59 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../UltraSonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UltraSonic.d" -MT"UltraSonic.o" -c -o "UltraSonic.o" "../UltraSonic.c"
+In file included from ../UltraSonic.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../UltraSonic.c: In function 'enterance_alarm':
+../UltraSonic.c:87: warning: implicit declaration of function 'uart_send_byte'
+Finished building: ../UltraSonic.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:28:1: warning: "ENTRANCE_SAFE" redefined
+../main.c:27:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10220 bytes (31.2% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:58:05 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:58:06 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:58:06 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:28:1: warning: "ENTRANCE_SAFE" redefined
+../main.c:27:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: home_montring2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,home_montring2.map -mmcu=atmega32 -o "home_montring2.elf"  ./UltraSonic.o ./adc.o ./buttons_leds.o ./lcd.o ./main.o ./smoke_sensor.o ./uart.o   
+Finished building target: home_montring2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S home_montring2.elf  >"home_montring2.lss"
+Finished building: home_montring2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex home_montring2.elf  "home_montring2.hex"
+Finished building: home_montring2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex home_montring2.elf  "home_montring2.eep"
+Finished building: home_montring2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10212 bytes (31.2% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:03:39 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:03:42 **** Incremental Build of configuration Debug for project home_montring1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8934 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:03:43 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10212 bytes (31.2% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

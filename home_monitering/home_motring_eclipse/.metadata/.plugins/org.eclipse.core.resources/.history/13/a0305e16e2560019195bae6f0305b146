@@ -1,0 +1,74 @@
+/*
+ * main.c
+ *
+ *  Created on: 28/02/2018
+ *      Author: Antonius Atef Ghaly
+ */
+
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include <string.h>
+#include <stdlib.h>
+#include "lcd.h"
+#include"UltraSonic.h"
+#include "adc.h"
+#include "buttons_leds.h"
+#include "uart.h"
+#include"smoke_sensor.h"
+#define normal_smoke 20
+extern uint8 smoke;
+uint16 distance;
+
+/*****ISR of INT 0 (button 0) ******/
+ISR(INT0_vect){
+	LCD_clearScreen();  //clear LCD
+}
+/*****ISR of INT 1 (button 1) ******/
+ISR(INT1_vect){
+	/**** do an action we chose eg :it can check the conductivity ****/
+	LCD_clearScreen();  //
+	_delay_ms(1);
+	send_smoke_data();
+	_delay_ms(1);
+}
+
+
+int main(void)
+{
+	INT0_Init();	//initialize and enable Interrupt 0
+	INT1_Init();	//initialize and enable Interrupt 1
+	leds_init(); 	//initialize led port
+	LCD_init(); 	// initialize LCD driver
+	adc_init(); 	//initialize ADC driver
+	uart_init();    //initialize UART
+	UltraSonic_init();
+	LCD_clearScreen();
+
+
+	for(uint8 i =0;i<10;i++){
+		off_led(GRN_LED);
+		_delay_ms(1);
+		on_led(GRN_LED);
+		_delay_ms(1);
+	}
+
+
+	while(1){
+		UltraSonic_display_distance();
+		_delay_ms(2);
+		read_smoke_data();	//read data and store in global variable smoke
+		send_smoke_data();	//send data which read (send value of smoke )
+		display_smoke_data();	//display the value of last read
+		/******** give fire alarm if the smoke above normal *********/
+		if(smoke>normal_smoke){
+			_delay_ms(1);
+			if(smoke>normal_smoke){
+				fire_alarm();
+				_delay_ms(10);
+				fire_alarm();
+			}
+		}
+	}
+}

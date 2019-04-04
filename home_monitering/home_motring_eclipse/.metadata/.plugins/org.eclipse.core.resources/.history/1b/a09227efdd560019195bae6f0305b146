@@ -1,0 +1,39 @@
+/*
+ * main.c
+ *
+ *  Created on: 28/02/2018
+ *      Author: Antonius Atef Ghaly
+ */
+
+#define F_CPU 8000000UL
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include <string.h>
+#include <stdlib.h>
+#include "lcd.h"
+#include"UltraSonic.h"
+uint16 distance;
+
+int main(void)
+{
+	LCD_init();
+	DDRD |=(1<<PD7);
+	PORTD |=(1<<6);
+	sei();			/* Enable global interrupt */
+	TIMSK = (1 << TOIE1);	/* Enable Timer1 overflow interrupts */
+	TCCR1A = 0;		/* Set all bit to zero Normal operation */
+
+	LCD_clearScreen();
+	LCD_displayString( "Distance =  ");
+
+	while(1){
+
+		distance=getDistance();
+		LCD_goToRowColumn(1,5);
+		LCD_intgerToString(distance);
+		LCD_displayString( " cm ");
+		_delay_ms(2);
+
+	}
+}

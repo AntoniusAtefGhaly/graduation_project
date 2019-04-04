@@ -1,0 +1,20 @@
+17:03:43 **** Incremental Build of configuration Debug for project home_montring2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 home_montring2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10212 bytes (31.2% Full)
+(.text + .data + .bootloader)
+
+Data:        102 bytes (5.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+17:03:43 Build Finished (took 575ms)
+

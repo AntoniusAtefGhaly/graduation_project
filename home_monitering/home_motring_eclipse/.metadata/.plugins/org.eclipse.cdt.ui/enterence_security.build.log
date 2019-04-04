@@ -1,0 +1,20 @@
+17:03:39 **** Incremental Build of configuration Debug for project enterence_security ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 enterence_security.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8706 bytes (26.6% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+17:03:40 Build Finished (took 1s.48ms)
+

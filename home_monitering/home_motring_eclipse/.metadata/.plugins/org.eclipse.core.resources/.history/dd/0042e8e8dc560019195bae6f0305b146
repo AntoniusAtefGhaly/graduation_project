@@ -1,0 +1,53 @@
+/*
+ * UltraSonic.c
+ *
+ *  Created on: 4Apr.,2019
+ *      Author: Hi
+ */
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include <string.h>
+#include <stdlib.h>
+#include"UltraSonic.h"
+
+int	getDistance(void)
+{
+	int distance=0;
+	/**** GENERATE triger pulse 10 usec to trig pin ****/
+	PORTD |= (1 << 7);
+	_delay_us(10);
+	PORTD &= (~(1 << 7));
+
+	/***** detect the raising edge of the echo pulse
+	 *  (indicate the start time of reflect wave)*/
+	TCNT1 = 0;	 /* Clear Timer counter */
+	TCCR1B =(1<<ICES1) | (1<<CS11)|(1<<CS10);	/* Capture on rising edge prescaler=64*/
+	TIFR = 1<<ICF1;	/* Clear ICP flag (Input Capture flag) */
+	TIFR = 1<<TOV1;	/* Clear Timer Overflow flag */
+	/*Calculate width of Echo by Input Capture (ICP) */
+
+	while ((TIFR & (1 << ICF1)) == 0); /* Wait for rising edge */
+
+	/***** detect the fallen edge of the echo pulse
+	 *  (indicate the end time of reflect wave)*/
+	TCNT1 = 0;	/* Clear Timer counter */
+	TCCR1B =(1<<CS11)|(1<<CS10);	/* Capture on falling edge,prescaler=64 */
+	//TCCR1B =(1<<CS12);	/* Capture on falling edge,prescaler=256 */
+	//TCCR1B =(1<<CS11);	/* Capture on falling edge,prescaler=8*/
+
+	TIFR = 1<<ICF1;	/* Clear ICP flag (Input Capture flag) */
+	TIFR = 1<<TOV1;	/* Clear Timer Overflow flag */
+	while ((TIFR & (1 << ICF1)) == 0);/* Wait for falling edge */
+	count = ICR1;	/* Take count */
+	/* 8MHz Timer freq, sound speed =343 m/s */
+	/*
+	 * dis = 0.5 * (no of counts *pres * 340 m/s) / (clk freq)
+	 */
+	//distance = count/735; //in meter count/735
+
+	distance = count/7; //in cm
+return distance;
+
+}
